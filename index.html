@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carabus Ioan-Sebastian | Personal Site</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Modern CSS Styling -->
+  <style>
+    :root {
+      --primary-color: #333;
+      --secondary-color: #444;
+      --accent-color: #00A8E8;
+      --light-bg: #f4f4f4;
+      --white: #fff;
+      --transition-speed: 0.3s;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: var(--light-bg);
+      line-height: 1.6;
+      color: var(--primary-color);
+    }
+    header {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-weight: 300;
+    }
+    nav {
+      background: var(--secondary-color);
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0;
+    }
+    nav ul li a {
+      display: block;
+      padding: 1rem 1.5rem;
+      color: var(--white);
+      text-decoration: none;
+      transition: background var(--transition-speed);
+    }
+    nav ul li a:hover {
+      background: var(--accent-color);
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      margin-top: 0;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+    .project, .blog-post, .event, .writeup-post {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      transition: transform var(--transition-speed);
+      background: var(--light-bg);
+    }
+    .project:hover, .blog-post:hover, .event:hover, .writeup-post:hover {
+      transform: translateY(-3px);
+    }
+    /* About Section Flex Layout */
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+    }
+    .about-image {
+      flex: 1 1 40%;
+    }
+    .about-image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .about-text {
+      flex: 1 1 55%;
+      font-size: 1rem;
+    }
+    footer {
+      background: var(--primary-color);
+      color: var(--white);
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li a {
+        border-bottom: 1px solid #555;
+      }
+      .about-content {
+        flex-direction: column;
+      }
+      .about-image, .about-text {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Personal Website</h1>
+    <p>Carabus Ioan-Sebastian</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">Who Am I?</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#events">CV & Events</a></li>
+      <li><a href="#writeups">CTF Writeups</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <!-- Who Am I Section with image on left and text on right -->
+    <section id="about">
+      <h2>Who Am I?</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="resized.jpeg" alt="Picture of Carabus Ioan-Sebastian">
+        </div>
+        <div class="about-text">
+          <p>Hello! I'm Carabus Ioan-Sebastian – a high school student passionate about cybersecurity, coding, and all things electronics.</p> 
+          <p></p>
+          <p>Here you'll find details about my projects, interests, academic journey as well as CTF writeups.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Horoscope Mobile App</h3>
+        <p>
+          <a href="https://github.com/CarabusIoanSebastian/Horoscop/tree/master" target="_blank">This is my first coding project</a> – a simple Horoscope mobile app created with Android Studio in collaboration with a close friend.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Project Title 2</h3>
+        <p>Description of your second project. You can list as many projects as needed.</p>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+      <h2>My Interests</h2>
+      <p>I love exploring cybersecurity challenges, experimenting with new coding techniques, and diving into the world of electronics. Beyond tech, I have a passion for reading, creative writing, and sports.</p>
+    </section>
+
+    <!-- CV & Event Participation Section -->
+    <section id="events">
+      <h2>Events</h2>
+      <div class="event">
+        <h3>Suceavahacks and Hackovina</h3>
+        <p>Along with friends, we founded Suceavahacks – a community for tech-savvy high school students in collaboration with <a href="https://hackclub.com/" target="_blank">Hack Club</a>. We also organized the first Hackathon in Suceava, which gathered around 50 participants from across Romania. The event was a huge success!</p>
+        <p>Check out our <a href="https://linktr.ee/suceavahacks" target="_blank">website and social media</a> and view some <a href="https://www.dropbox.com/scl/fo/om7dxezgp1c25bn1nzndy/ANzasUgaVUZ6uL6kfLTkulQ?rlkey=5itc03hcz9rlst2crb1uph4hb&st=cbz4xiv5&dl=0" target="_blank">event photos</a>.</p>
+      </div>
+      <div class="event">
+        <h4>Event Title or Conference 2</h4>
+        <p>Details about another event or conference you attended or spoke at.</p>
+      </div>
+    </section>
+
+    <!-- CTF Writeups Section -->
+    <section id="writeups">
+      <h2>CTF Writeups</h2>
+      <div class="writeup-post">
+        <h3>Challenge Title 1</h3>
+        <p><small>Published on YYYY-MM-DD</small></p>
+        <p>A brief excerpt from your first writeup. This section can link to a separate detailed page or document.</p>
+        <a href="#">Read more...</a>
+      </div>
+      <div class="writeup-post">
+        <h3>Challenge Title 2</h3>
+        <p><small>Published on YYYY-MM-DD</small></p>
+        <p>A brief excerpt from your second writeup. Continue adding posts following the same format.</p>
+        <a href="#">Read more...</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Carabus Ioan-Sebastian. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
